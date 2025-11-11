@@ -1,124 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Universal Approximator Theory — Every Thing is Possible</title>
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/166458935?s=200&v=4" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Approximator Theory - OpenLogic</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <style>
+    :root {
+      --maxw: 960px;
+      --accent: #0b5cff;
+    }
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
       margin: 0;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #222;
+      padding: 2rem;
+      background: #fff;
+      color: #111;
       line-height: 1.7;
     }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
     header {
-      background: linear-gradient(120deg, #0d1117, #161b22, #1f2937);
-      color: #fff;
       text-align: center;
-      padding: 100px 20px 80px 20px;
+      margin-bottom: 2rem;
     }
-    header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    header img.logo {
+      display: block;
+      margin: 1rem auto;
+      height: auto;
+      width: auto;
+      max-width: 100%;
     }
-    header h1 {
-      font-size: 2.8em;
-      margin: 0;
-      font-weight: 700;
-      background: linear-gradient(90deg, #ffffff, #00c0ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    h1 {
+      font-size: 1.8rem;
+      margin: 0.6rem 0;
+      text-align: center;
     }
-    header h2 {
-      font-size: 1.3em;
-      font-weight: 400;
-      color: #c9d1d9;
-      margin-top: 10px;
+    h2 {
+      font-size: 1.2rem;
+      margin: 1.2rem 0 0.6rem;
+      color: var(--accent);
+      text-align: left;
     }
-    main {
-      max-width: 900px;
-      margin: -60px auto 80px auto;
-      background: #fff;
-      padding: 40px 50px;
-      border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    p, li {
+      text-align: justify;
     }
-    h1, h2, h3, h4 {
-      color: #111;
-    }
-    pre, code {
-      background: #f0f0f0;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: "Consolas", monospace;
+    ul, ol {
+      margin-left: 1.5rem;
     }
     hr {
-      border: 0;
-      border-top: 2px solid #eee;
-      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 2rem 0;
     }
-    a {
-      color: #007bff;
-      text-decoration: none;
+    footer {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+      margin-top: 2.5rem;
     }
-    a:hover {
-      text-decoration: underline;
+    code {
+      background: #f7f7f7;
+      padding: 0.15rem 0.3rem;
+      border-radius: 4px;
     }
-    blockquote {
-      background: #f7f9fb;
-      border-left: 4px solid #007bff;
-      margin: 20px 0;
-      padding: 10px 20px;
-      color: #444;
-      font-style: italic;
-    }
-    @media (max-width: 768px) {
-      main {
-        padding: 25px;
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
       }
-      header {
-        padding: 80px 10px 60px 10px;
-      }
-      header h1 {
-        font-size: 2.2em;
+      h1 {
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-<img src="./OPENLOGICLOGO.png" alt="OpenLogic Logo"/>
-    <h1>Universal Approximator Theory</h1>
-    <h2>Every Thing is Possible</h2>
-  </header>
+  <div class="container">
+    <header>
+      <img src="./OPENLOGICLOGO.png" alt="OpenLogic Logo" class="logo">
+      <h1>Universal Approximator Theory: Every Thing is Possible</h1>
+      <h2 style="text-align:center;">Technical Documentation and White Paper</h2>
+      <p><strong>Version 1.0</strong><br>
+      <strong>Date:</strong> November 11, 2025<br>
+      <strong>Author:</strong> Seyed HamidReza Reyhani<br>
+      <strong>Affiliations:</strong> Founder of OpenLogic, Creator of Universal Approximator Theory<br>
+      <strong>GitHub Repository:</strong> 
+      <a href="https://github.com/HamidrezaReyhani">https://github.com/HamidrezaReyhani</a></p>
+    </header>
 
-  <main>
-<pre style="white-space: pre-wrap; word-wrap: break-word; font-family: inherit; background: none; padding: 0; margin: 0;"># Universal Approximator Theory: Every Thing is Possible
+    <hr>
 
-## White Paper / Technical Documentation
+    <main>
 
-**Author:** Seyed HamidReza Reyhani  
-**Title:** Founder of OpenLogic, Creator of Universal Approximator Theory  
-**Date:** November 11, 2025  
-**GitHub Repository:** [https://github.com/HamidrezaReyhani](https://github.com/HamidrezaReyhani)  
-**License:** This document is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license for public access and sharing.  
-**Version:** 1.1  
+      <section>
+        <p><strong>Universal Approximator Theory</strong> — also known as “Every Thing is Possible” — proposes that all forms of existence, perception, and possibility are manifestations of an underlying universal approximator function that continuously generates, transforms, and redefines reality within an infinite space of potential outcomes.</p>
 
----
+        <p>This theory bridges <em>mathematics, logic, artificial intelligence, and metaphysics</em> — asserting that the same principle behind neural networks’ ability to approximate any function applies to the universe itself: existence is an ever-evolving approximation of all that can possibly be.</p>
 
-### Simple and Informal Explanation
-Let me explain it to you very simply and casually: The "Everything is Possible" theory means that in the world, nothing is absolutely impossible. Every event, phenomenon, state, or outcome—no matter how strange or unlikely—has a possibility of occurring. Its percentage might be very low, but it's not zero. 🎯 In even simpler terms: This theory says the world is full of probabilities and possibilities, not restrictions. Everything can happen, just the time, conditions, or level of reality differs. 🔹 Simple example: It might not rain today, but it's possible. One day, other intelligent beings might be found, or even a parallel world might exist—because in principle, none of them are impossible. 🔸 From a philosophical perspective: The world is like an endless sea of "possibilities"; and we only see a small part of it that has become "actual"—the rest of the possibilities are still waiting to happen. ✅ Summary of the summary: The Everything is Possible theory says nothing is inherently impossible; every phenomenon, even the strangest ones, has the capability to occur somewhere in existence or at some moment in the future. It's like existence itself is an infinite field of "possibility", and we are only witnessing its current versions.
+        <p><strong>Core Idea:</strong> If an approximator can represent any possible function, and reality behaves as such an approximator, then by definition, <em>nothing is impossible</em>.</p>
+      </section>
 
----
+      <hr>
 
-### Abstract
-... (تمام متن اصلی شما بدون تغییر — در همین ساختار ادامه دارد) ...
-</pre>
-  </main>
+      <section>
+        <h2>Abstract</h2>
+        <p>The Universal Approximator Theory extends the concept of the universal approximation theorem from artificial intelligence to a cosmological and logical scale. It treats the universe as a dynamic computational field where all possible states coexist probabilistically, and consciousness acts as a selective filter within this infinite function space. The theory provides a mathematical and philosophical framework for modeling reality as an emergent approximation of every possible existence.</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Mathematical Framework</h2>
+
+        <h3>1. Universal Possibility Space</h3>
+        <p>Define the total possibility space \( \Omega \) as an infinite-dimensional vector space containing all potential states of existence:</p>
+        <p>\[ \Omega = \{ S_i \mid S_i \text{ is any conceivable or computable state} \} \]</p>
+
+        <h3>2. Existence as Approximation</h3>
+        <p>The observable universe at any given time \( t \) is a partial approximation of \( \Omega \):</p>
+        <p>\[ E(t) = f_\theta(\Omega, t) \approx \Omega \]</p>
+        <p>where \( f_\theta \) represents a parametric function (analogous to a neural network) evolving toward a more complete representation of all possible states.</p>
+
+        <h3>3. Probability Field of Realization</h3>
+        <p>Each potential state \( S_i \) has a realization probability \( P(S_i) \), where:</p>
+        <p>\[ \sum_i P(S_i) = 1 \quad \text{and} \quad P(S_i) > 0 \; \forall S_i \in \Omega \]</p>
+        <p>This ensures that every possible thing has a nonzero chance of being realized — hence “every thing is possible.”</p>
+
+        <h3>4. Consciousness as Selector</h3>
+        <p>Let \( C \) denote a consciousness operator acting as a selective projection from \( \Omega \) to the observed subset \( R \):</p>
+        <p>\[ R = C(\Omega) = \{ S_i \in \Omega \mid C(S_i) = 1 \} \]</p>
+        <p>This formalizes perception as the filtering of infinite potential into finite experience.</p>
+
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Philosophical Implications</h2>
+        <ul>
+          <li><strong>Ontological:</strong> Existence is not fixed but continuously approximating all possibilities.</li>
+          <li><strong>Epistemological:</strong> Knowledge is a dynamic map of approximations within the universal function.</li>
+          <li><strong>Metaphysical:</strong> Impossibility is undefined — every potential state exists within \(\Omega\) with nonzero probability.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Applications</h2>
+        <ul>
+          <li><strong>Artificial Intelligence:</strong> Theoretical basis for universal learning systems that evolve toward total representational capacity.</li>
+          <li><strong>Quantum Physics:</strong> Provides a conceptual bridge between probabilistic quantum fields and information theory.</li>
+          <li><strong>Philosophy of Mind:</strong> Models consciousness as a universal selector function acting on infinite informational space.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>The Universal Approximator Theory unifies computation, logic, and metaphysics under one principle: reality itself functions as an infinite approximator of possibility. By recognizing existence as probabilistic, continuous, and ever-expanding, it establishes the foundation for a scientific and philosophical understanding of why, ultimately, every thing is possible.</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>References</h2>
+        <ul>
+          <li>Hornik, K. (1991). <em>Approximation capabilities of multilayer feedforward networks</em>. Neural Networks.</li>
+          <li>Tegmark, M. (2014). <em>Our Mathematical Universe</em>.</li>
+          <li>Deutsch, D. (1997). <em>The Fabric of Reality</em>.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Released under CC BY 4.0 — OpenLogic, 2025.</p>
+    </footer>
+  </div>
 </body>
 </html>
